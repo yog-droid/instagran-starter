@@ -1,46 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555">
+    <link rel="stylesheet"
+        href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555">
 
     <style>
-    
-      
+        *{
+            box-sizing: border-box;
+            margin:0;
+        }
+        html {
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        body {
+            height: inherit;
+            width: inherit;
+            padding: 0;
+            background-color: #fafafa;
+            margin: 0;
+        }
+
+        #stories {
+            height: 90px;
+            width: 70vw;
+            margin-top: -5px;
+            margin-left: auto;
+            border: 1px solid #b5b5b5;
+            border-radius: 2px;
+            padding-left: 30px;
+        }
+
+        .user {
+            width: 18%;
+            display: inline-block;
+        }
+
+        .user p {
+            text-align: center;
+            margin: 0;
+            font-family: 'Lucida Sans Unicode';
+            font-weight: 100;
+            font-size: smaller;
+        }
+
+        .post-header {
+            background-color: white;
+            height: 50px;
+            box-sizing: border-box;
+            width: inherit;
+            padding: 5px;
+            border-bottom: 1px solid #b5b5b5;
+        }
+
+        nav{
+            display: inline-block;
+            background-color: white;
+            width: 100vw;
+            height: 54px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        #logo{
+            height: 40px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+       nav input{
+            height: 25px;
+            width: 30vw;
+            position: absolute;
+            left: 35vw;
+            right: 35vw;
+            color: #fafafa;
+            text-align: center;
+            border: 1px solid #b5b5b5;
+            border-radius: 3px;
+        }
+
+        #actions{
+            height: 40px;
+            position: absolute;
+            right: 0px;
+        }
+        div.user{
+          margin-top: 5px;
+          border-radius: 50%; 
+          border: 4px double #b5b5b5;
+          width: 56px;
+          height: 56px;
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto; 
+        }
+
+        .post{
+            border: 1px solid #b5b5b5;
+            border-radius: 2px;
+            height: 60vw;
+            margin-left: 119px;
+            margin-right: 119px;
+            margin-top: 10px;
+        }
+        .user img{
+            margin-top: 5px;
+            border-radius: 50%;
+            border: 4px double #b5b5b5;
+            width: 56px;
+            height: 56px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
+
 <body>
     <nav>
-       
-        <img id="logo" src="img/instagran.png" alt="instagran logo" >
-    
-        <input type="text" placeholder="search"/>
 
-        <img id="actions" src="img/actions.png" alt="actions" >
+        <img id="logo" src="img/instagran.png" alt="instagran logo">
+
+        <input type="text" placeholder="search" />
+
+        <img id="actions" src="img/actions.png" alt="actions">
     </nav>
 
     <section id="stories">
         <div class="user" id="mydiv">
-            <img src="img/gran1.jpg" >
+            <img src="img/gran1.jpg">
             <p class="userstory">Elma</p>
         </div>
         <div class="user">
-            <img src="img/gran2.jpg" >
+            <img src="img/gran2.jpg">
             <p class="userstory">Betty</p>
         </div>
         <div class="user">
-            <img src="img/gran3.jpg" >
+            <img src="img/gran3.jpg">
             <p class="userstory">Sandra</p>
         </div>
         <div class="user">
-            <img src="img/gran4.jpg" >
+            <img src="img/gran4.jpg">
             <p class="userstory">Delores</p>
         </div>
 
         <div class="user">
-            <img src="img/gran5.jpg" >
+            <img src="img/gran5.jpg">
             <p class="userstory">Karen</p>
         </div>
     </section>
@@ -56,4 +167,5 @@
 
     <footer></footer>
 </body>
+
 </html>
